@@ -5,6 +5,7 @@ def oxford_comma(array)
   when 2
     "#{array[0]} and #{array[1]}"
   else
-    "asdf"
+    temp = array.pop
+    "#{array.join(", ")}, and #{temp}"
   end
 end
